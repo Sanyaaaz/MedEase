@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medease Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MedEase</div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Doctors</a>
+          <a href="#">Contact</a>
+        </nav>
+        <button href="login.html" class="button" onclick="location.href='login.html';openForm()" >Login</button>
+    
+      </header>
+    <!-- Trigger Button -->
+    <div class="terms-section">
+        <h2>Terms of Agreement</h2>
+        <p>By signing up, you agree to share your basic details with the hospital for the purpose of medical consultation and services. These details may include your name, email, medical history, and contact information.These details will be securely stored and processed by the hospital for appointment scheduling, communication, and medical assistance. Your information will not be shared with third parties without your consent.</p>
+        <button onclick="openForm()">Proceed to Login/Sign Up</button>
+    </div>
+
+
+    <!-- Login/Signup Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <div class="left-section">
+                <img src="doctor-image.jpg" alt="Healthcare Professional">
+            </div>
+            <div class="right-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <span id="signUpTab" class="tab active" onclick="showSignUp()">Sign Up</span>
+                        <span id="signInTab" class="tab" onclick="showSignIn()">Sign In</span>
+                    </div>
+                    <form id="signUpForm" class="form" action="#">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <form id="signInForm" class="form hidden" action="#">
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Sign In</button>
+                    </form>
+                </div>
+                <div class="footer">
+                    <p>&copy; 2024 Medease. All rights reserved.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

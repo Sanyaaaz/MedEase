@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow-Up Appointment</title>
+  <link rel="stylesheet" href="followup.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MedEase</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Doctors</a>
+        <a href="#">Contact</a>
+    </nav>
+    <button class="button" onclick="location.href='login.html'">Login</button>
+</header>
+
+
+  </header>
+    <h1 class="follow-up-header">Appointment</h1>
+    <div class="follow-up-container">
+      <!-- Contact Information Section -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Book your follow-up appointment with ease and set reminders to stay on track.</p>
+        <ul>
+          <li>📞 +1234567890</li>
+          <li>✉️ support@medease.com</li>
+          <li>📍 Delhi, India </li>
+        </ul>
+      </div>
+  
+      <!-- Form Section -->
+      <div class="form-section">
+        <h2>Book Your Follow-Up</h2>
+        <form>
+          <label for="your-name">Your Name</label>
+          <input type="text" id="your-name" placeholder="Enter your name" required>
+          
+          <label for="doctor-name">Doctor's Name</label>
+          <input type="text" id="doctor-name" placeholder="Enter doctor's name" required>
+          
+          <label for="appointment-date">Date</label>
+          <input type="date" id="appointment-date" required>
+          
+          <label for="appointment-time">Time</label>
+          <input type="time" id="appointment-time" required>
+          
+          <label for="reminder">Set Reminder</label>
+          <select id="reminder">
+            <option value="none">None</option>
+            <option value="1hour">1 hour before</option>
+            <option value="1day">1 day before</option>
+            <option value="1week">1 week before</option>
+          </select>
+          
+          <button type="submit" class="submit-button">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* This will fix the header to the top */
+    top: 0; /* Ensures it's at the top of the page */
+    left: 0; /* Keeps it aligned to the left edge */
+    right: 0; /* Ensures it spans the full width of the page */
+    z-index: 1000; /* Keeps it on top of other content */
+  }
+  
+  .header nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+  }
+  .button {
+    background-color: #5daade;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .logo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5daade;
+    font-size:x-large;
+  }
+
+  .terms-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px; /* To offset navbar */
+}
+
+.terms-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.terms-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.terms-section button {
+    background-color: #5daade;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.terms-section button:hover {
+    background-color: #4c94c8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    background-color: #fff;
+    width: 70%;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Left Section */
+.left-section {
+    background: linear-gradient(135deg, #5daade, #032135);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Right Section */
+.right-section {
+    width: 50%;
+    padding: 40px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    padding: 10px 20px;
+}
+
+.tab.active {
+    color: #333;
+    border-bottom: 2px solid #5daade;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5daade;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: #5daade;
+    font-size: 18px;
+    text-decoration: none;
+}

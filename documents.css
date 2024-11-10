@@ -1,0 +1,359 @@
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+  }
+  .button {
+    background-color: #5daade;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .logo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5daade;
+    font-size:x-large;
+  }
+
+.main-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+  .main-section h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .main-section p {
+    font-size: 1rem;
+    color: #666;
+    margin: 15px 0;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .button {
+    background-color: #5daade;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .card:hover {
+    transform: translateY(-5px); /* Adds a subtle lift effect on hover */
+}
+  
+  .card h3 {
+    color: #5daade;
+  }
+  
+  .service-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .service-section h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-image {
+    width: 100px;
+    height: 100px;
+    background-color: #d9eaf7;
+    border-radius: 50%;
+  }
+  
+  .service-description {
+    text-align: left;
+  }
+  
+  .service-description h3 {
+    color: #5daade;
+  }
+  
+  .footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .logo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5daade;
+    font-size:x-large;
+  }
+
+  /* Medical Records Section */
+.medical-records {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.medical-records h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Container for Patient Details */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section with Patient Details */
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+/* Info Text - For the patient details (ID, Status, Dates) */
+.info-text {
+    display: flex;
+    flex-wrap: nowrap;  /* Prevent wrapping of items */
+    justify-content: flex-start;  /* Align items from left to right */
+    align-items: center;  /* Vertically center items */
+    gap: 20px;  /* Space between the items */
+}
+
+.info {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Making the labels bold and dark */
+.info span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Patient Photo */
+.photo {
+    margin-left: 20px;
+    text-align: right;
+}
+
+/* Passport Size Photo */
+#patient-photo {
+    width: 100px;  /* Standard passport size width */
+    height: 130px;  /* Standard passport size height */
+    border-radius: 5px;  /* Slight rounding of the edges (passport photos typically have sharp corners) */
+    object-fit: cover;  /* Ensure the image fits inside the box without distortion */
+    border: 2px solid #ccc;  /* A border to define the photo */
+}
+
+/* Form-like Section Styling */
+.section {
+    margin-top: 20px;
+}
+
+.section h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 5px;
+}
+
+/* Details Grid */
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 20px;
+    margin-top: 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.value {
+    color: #666;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    .label, .value {
+        text-align: left;
+    }
+}
+
+/* Additional Info Section */
+.additional-info {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+.additional-info p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Medical Documents Section */
+.medical-documents {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.medical-documents h3 {
+    color: #5daade;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Documents List */
+.documents-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.documents-list li {
+    margin: 20px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.documents-list p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Button Styling */
+.view-document, .download-document {
+    color: #5daade;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #eaf5fc;
+    border: 1px solid #5daade;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.view-document:hover, .download-document:hover {
+    background-color: #5daade;
+    color: #fff;
+}
+
+/* Document Viewer */
+.document-viewer {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9fafc;
+    border-left: 3px solid #5daade;
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .documents-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .view-document, .download-document {
+        margin-top: 8px;
+    }
+}

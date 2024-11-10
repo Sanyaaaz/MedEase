@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding-top: 100px; /* Adjust padding to avoid overlap with fixed header */
+}
+
+.logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5daade;
+    font-size: x-large;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.button {
+    background-color: #5daade;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.container {
+    width: 60%;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 50px; /* Adds spacing from header */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    margin: 0 5px;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.content-section {
+    display: none;
+    text-align: left;
+    padding: 10px 20px;
+    margin-top: 50px; /* Adds space between sections */
+    border-top: 1px solid #ddd;
+}
+
+
+.content-section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+ul li {
+    padding: 8px 0;
+}
+
+.pay-now {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-now:hover {
+    background-color: #218838;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Show active content section */
+.content-section.active {
+    display: block;
+}

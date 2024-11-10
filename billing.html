@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing and Payment</title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    <header class="header">
+    <div class="logo">MedEase</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Doctors</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button href="login.html" class="button" onclick="location.href='login.html'" >Login</button>
+
+  </header>
+
+<div class="container">
+    <h1>Billing and Payment</h1>
+
+    <!-- Tabs for navigation -->
+    <div class="tab-container">
+        <button class="tab active" onclick="showSection('billingSummary')">Billing Summary</button>
+        <button class="tab" onclick="showSection('paymentOptions')">Payment Options</button>
+        <button class="tab" onclick="showSection('insurance')">Insurance</button>
+    </div>
+
+    <!-- Billing Summary Section -->
+    <div id="billingSummary" class="content-section">
+        <h2>Billing Summary</h2>
+        <p>Here is a summary of your billing details, including itemized costs and total due.</p>
+        <ul>
+            <li>Service A: Rs.100</li>
+            <li>Service B: Rs.150</li>
+            <li>Service C: Rs.200</li>
+            <li><strong>Total: Rs.450</strong></li>
+        </ul>
+    </div>
+
+    <!-- Payment Options Section -->
+    <div id="paymentOptions" class="content-section hidden">
+        <h2>Payment Options</h2>
+        <p>Select your preferred payment method:</p>
+        <ul>
+            <li>Credit Card</li>
+            <li>Debit Card</li>
+            <li>Net Banking</li>
+            <li>UPI</li>
+        </ul>
+        <button class="pay-now">Pay Now</button>
+    </div>
+
+    <!-- Insurance Section -->
+    <div id="insurance" class="content-section hidden">
+        <h2>Insurance</h2>
+        <p>Provide your insurance details for billing:</p>
+        <form>
+            <label for="insuranceProvider">Insurance Provider:</label>
+            <input type="text" id="insuranceProvider" placeholder="Enter your provider">
+
+            <label for="policyNumber">Policy Number:</label>
+            <input type="text" id="policyNumber" placeholder="Enter your policy number">
+
+            <button type="submit">Submit Insurance Details</button>
+        </form>
+    </div>
+</div>
+
+<script src="billing.js"></script>
+</body>
+</html>
