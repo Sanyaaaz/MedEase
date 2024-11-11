@@ -59,11 +59,13 @@ body {
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
   gap: 50px;
-  margin: 10px 20px;
-  flex-wrap: wrap;
+  padding: 50px; /* Padding around the container */
+  margin: 0 auto; /* Center the container */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  justify-content: center; /* Center-align the grid content */
+  max-width: 1200px;
 }
 
 .card {
@@ -87,14 +89,14 @@ body {
   /* Lift effect + size increase */
   background-color: #f8f8f8;
   /* Change background color */
-  color: #333;
-  /* Change text color */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* .card:hover h3 {
-  color: #ffffff;
-} */
+.card:hover h3,
+.card:hover p {
+  color: #333;
+  /* Change text color on hover */
+}
 
 .service-section {
   padding: 50px 20px;
@@ -149,4 +151,17 @@ body {
 
 .card {
   cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
 }
