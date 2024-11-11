@@ -1,129 +1,145 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f8fb;
-  }
-  
-  .header {
-    background-color: #ffffff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header nav a {
-    margin: 0 15px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .main-section {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .main-section h1 {
-    font-size: 3rem;
-    color: #333;
-  }
-  
-  .main-section p {
-    font-size: 1rem;
-    color: #666;
-    margin: 15px 0;
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .button {
-    background-color: #5daade;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 10px 20px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    width: 280px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .card h3 {
-    color: #5daade;
-  }
-  
-  .service-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .service-section h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .service-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .service-image {
-    width: 100px;
-    height: 100px;
-    background-color: #d9eaf7;
-    border-radius: 50%;
-  }
-  
-  .service-description {
-    text-align: left;
-  }
-  
-  .service-description h3 {
-    color: #5daade;
-  }
-  
-  .footer {
-    background-color: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .logo{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #5daade;
-    font-size:x-large;
-  }
-  
-  .card {
-    cursor: pointer;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fb;
 }
- 
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header nav a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.main-section h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.main-section p {
+  font-size: 1rem;
+  color: #666;
+  margin: 15px 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.button {
+  background-color: #5daade;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  /* Smooth transition */
+}
+
+.card h3 {
+  color: #5daade;
+}
+
+/* Hover effect for the card */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  /* Lift effect + size increase */
+  background-color: #f8f8f8;
+  /* Change background color */
+  color: #333;
+  /* Change text color */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* .card:hover h3 {
+  color: #ffffff;
+} */
+
+.service-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  width: 100px;
+  height: 100px;
+  background-color: #d9eaf7;
+  border-radius: 50%;
+}
+
+.service-description {
+  text-align: left;
+}
+
+.service-description h3 {
+  color: #5daade;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #5daade;
+  font-size: x-large;
+}
+
+.card {
+  cursor: pointer;
+}
