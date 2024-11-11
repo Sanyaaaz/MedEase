@@ -17,21 +17,13 @@
       <a href="#">Doctors</a>
       <a href="#">Contact</a>
     </nav>
-    <button>Profile</button>
+    <button href="profile.html" class="button" onclick="location.href='profile.html'">Profile</button>
 
   </header>
 
-  <script>
-    // JavaScript to toggle the dropdown menu
-    function toggleDropdown() {
-      var dropdown = document.getElementById("dropdown-menu");
-      dropdown.classList.toggle("show");
-    }
-  </script>
-
   <!-- Main Section: Medical Record Information -->
   <div class="medical-records">
-    <h2>Patient Medical Record</h2>
+    <h2>Patient Medical Documents</h2>
 </div>
 
   <div class="container">
@@ -46,7 +38,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <!-- <div class="section">
         <h3>Personal Information</h3>
         <div class="details-grid">
             <div class="label">Full Name:</div><div class="value">John Doe</div>
@@ -99,14 +91,13 @@
             <div class="label">Relationship:</div><div class="value">Spouse</div>
             <div class="label">Phone:</div><div class="value">(987) 654-3210</div>
         </div>
-    </div>
-</div>
+    </div> -->
 
     <!-- Additional Info / Real-time Updates (optional for now) -->
     <div class="additional-info">
-      <p><strong>Current Notes:</strong> The patient is under observation and awaiting discharge plan.</p>
-    </div>
-  </section>
+        <p><strong>Current Notes:</strong> The patient is under observation and awaiting discharge plan.</p>
+      </div>
+</div> 
 
   <!-- Medical Documents Section -->
 <section class="medical-documents">
@@ -145,10 +136,10 @@
 </section>
 
 
-  <!-- Footer -->
-  <footer class="footer">
+<!-- Footer -->
+<footer class="footer">
     <p>&copy; 2024 MedEase. All rights reserved.</p>
-  </footer>
+</footer>
 
 </body>
 </html>

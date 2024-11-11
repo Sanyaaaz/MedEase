@@ -49,6 +49,13 @@ body {
   font-weight: bold;
   display: inline-block;
   margin-top: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.button:hover {
+  background-color: #4391c6; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly increase size */
 }
 
 .card-container {

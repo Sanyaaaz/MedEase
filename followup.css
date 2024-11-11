@@ -20,6 +20,7 @@ body {
   padding: 0;
   background-color: #f4f8fb;
 }
+
 .button {
   background-color: #5daade;
   color: #fff;
@@ -29,7 +30,15 @@ body {
   font-weight: bold;
   display: inline-block;
   margin-top: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
+
+/* Hover Effect */
+.button:hover {
+  background-color: #3a8bb5; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
 .logo{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #5daade;

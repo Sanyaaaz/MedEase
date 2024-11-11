@@ -19,7 +19,6 @@
     padding: 0;
     background-color: #f4f8fb;
   }
-  
   .button {
     background-color: #5daade;
     color: #fff;
@@ -36,8 +35,8 @@
   .button:hover {
     background-color: #3a8bb5; /* Darker shade on hover */
     transform: scale(1.1); /* Slightly increase size */
-  }  
-
+  }
+  
   .logo{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5daade;
@@ -72,8 +71,8 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 700px;
-    border-left: 4px solid #5daade;
     margin: 20px auto;
+    border-left: 4px solid #5daade;
     font-family: Arial, sans-serif;
 }
 
@@ -107,6 +106,34 @@
     color: #333;
 }
 
+/* Patient Photo */
+.photo {
+    margin-left: 20px;
+    text-align: right;
+}
+
+/* Passport Size Photo */
+#patient-photo {
+    width: 100px;  /* Standard passport size width */
+    height: 130px;  /* Standard passport size height */
+    border-radius: 5px;  /* Slight rounding of the edges (passport photos typically have sharp corners) */
+    object-fit: cover;  /* Ensure the image fits inside the box without distortion */
+    border: 2px solid #ccc;  /* A border to define the photo */
+}
+
+/* Form-like Section Styling */
+.section {
+    margin-top: 20px;
+}
+
+.section h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 5px;
+}
+
 /* Details Grid */
 .details-grid {
     display: grid;
@@ -137,108 +164,5 @@
     }
     .label, .value {
         text-align: left;
-    }
-}
-
-/* Additional Info Section */
-.additional-info {
-    padding: 10px;
-    border-radius: 10px;
-    /* margin-top: 30px; */
-    max-width: 900px;
-    /* margin: 30px auto; */
-    text-align: center;
-}
-.additional-info p {
-    font-size: 1rem;
-    color: #666;
-    margin: 10px 0;
-}
-
-/* Medical Documents Section */
-.medical-documents {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 709px;
-    margin: 25px auto;
-    text-align: left;
-    border-left: 4px solid #5daade;
-}
-
-.medical-documents h3 {
-    color: #5daade;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Documents List */
-.documents-list ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.documents-list li {
-    margin: 20px 0;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.documents-list p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-}
-
-/* Button Styling */
-.view-document, .download-document {
-    color: #5daade;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-    display: inline-block;
-    margin-left: 10px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: #eaf5fc;
-    border: 1px solid #5daade;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-}
-
-.view-document:hover, .download-document:hover {
-    background-color: #5daade;
-    color: #fff;
-}
-
-/* Document Viewer */
-.document-viewer {
-    display: none; /* Hidden by default */
-    margin-top: 10px;
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: #f9fafc;
-    border-left: 3px solid #5daade;
-    color: #555;
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .documents-list li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .view-document, .download-document {
-        margin-top: 8px;
     }
 }
